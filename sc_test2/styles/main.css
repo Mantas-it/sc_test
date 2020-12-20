@@ -1,0 +1,27 @@
+[automation-id="watchlist-list-instruments-list"] span.etoro-helper-price {
+	left: 5px;
+	top: -2px;
+}
+
+[automation-id="watchlist-grid-instruments-list"] span.etoro-helper-price {
+	left: 5px;
+	top: 0;
+}
+
+[automation-id="watchlist-list-instruments-list"] {
+	position: relative;
+}
+
+span.etoro-helper-price {
+	position: absolute;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+span.etoro-helper-price.need-update-up {
+	color:red;
+}
+
+span.etoro-helper-price.need-update-down {
+	color:green;
+}

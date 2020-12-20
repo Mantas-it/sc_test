@@ -1,0 +1,29 @@
+{
+  "name": "sc_test2",
+  "version": "1.0.2",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "permissions": ["activeTab",
+    "http://www.etoro.com/watchlist"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.etoro.com/*"],
+      "css": ["styles/main.css"],
+      "js": ["scripts/etoro-helper.js","scripts/jquery-3.5.1.min.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "sc_test2",
+    "default_icon": "assets/etoro-64x64.png"
+  },
+  "icons": {
+    "16": "assets/etoro-64x64.png",
+    "48": "assets/etoro-64x64.png",
+    "128": "assets/etoro-128x128.png"
+  },
+  "manifest_version": 2
+}
